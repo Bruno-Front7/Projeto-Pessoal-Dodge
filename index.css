@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  text-shadow: 2px 1px 0 rgb(52, 58, 46);
+}
+body{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.12)), 
+    url("https://s1.1zoom.me/big0/977/Dodge_Challenger_SRT_Hellcat_Redeye_Widebody_Front_583439_1280x720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.14);
+  background-color: black;
+}
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  color: 	#C0C0C0;
+}
+
+.links li {
+  font-weight: bold;
+  font-size:20px;
+  font-family:garamond;
+  font-style:italic;
+}
+.titulo{
+  position: relative;
+  text-align: center;
+  font-size: 90px;
+  top: 100px;
+  color: 	white;
+  text-shadow: -6px 6px 0 black;
+}
+.titulo-titulo{
+  position: relative;
+  left: 100px;
+  top: 110px;
+  color:white;
+  font-size: 20px;
+  text-shadow: 4px 1px 6 black;
+}
+  .nav-container {
+  width: 90%;
+  margin: 250px auto;
+  border: 1px solid #50fa7b;
+  border-radius: 10px;
+  background: linear-gradient(to right, #1e1e2f, #1d3a2d);
+  padding: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.nav-menu li {
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background: #50fa7b;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-menu li:hover::after,
+.nav-menu li.active::after {
+  width: 100%;
+}
+.texto-2{
+  position: relative;
+  text-align: center;
+  top: -200px;
+  font-size: 80px;
+}
+.tabela-dodge {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-top: -130px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #50fa7b;
+}
+
+.tabela-dodge th,
+.tabela-dodge td {
+  border: 1px solid #50fa7b;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabela-dodge th {
+  background-color: #1a1a1a;
+  color: #50fa7b;
+  text-transform: uppercase;
+}
+
+.tabela-dodge tr:hover {
+  background-color: rgba(80, 250, 123, 0.1);
+}
